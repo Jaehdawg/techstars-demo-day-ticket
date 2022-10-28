@@ -38,6 +38,8 @@ const Post = () => {
   if (router.asPath !== router.route) {
     getQR()
     }
+    
+  getQR()
   }, [router] )
 
   return (
