@@ -35,8 +35,10 @@ const Post = () => {
   } 
 
   useEffect(() => {
+  if (router.asPath !== router.route) {
     getQR()
-  }, [] )
+    }
+  }, [router] )
 
   return (
     <div className={styles.container}>
