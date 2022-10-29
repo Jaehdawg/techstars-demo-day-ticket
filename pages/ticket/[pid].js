@@ -38,8 +38,6 @@ const Post = () => {
   if (router.asPath !== router.route) {
     getQR()
     }
-    
-  getQR()
   }, [router] )
 
   return (
@@ -52,10 +50,10 @@ const Post = () => {
 
       <main className={styles.main}>
         <div>
-          <img src='/resources/ticket.png' width='500' height='470' />
+          <img src='/resources/ticket.png' width='420' height='370' />
           </div>
         <div className={styles.grid}>
-          <div className={styles.card}>
+          <div>
             <img src={QRCode} />
           </div>
           <div>
