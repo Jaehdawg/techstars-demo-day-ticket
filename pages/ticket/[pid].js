@@ -32,13 +32,17 @@ const Post = () => {
         alert(error.message)
     }
     
-  } 
+  }
 
   useEffect(() => {
   if (router.asPath !== router.route) {
     getQR()
     }
   }, [router] )
+
+  const Print = () =>{     
+    window.print();
+  }
 
   return (
     <div className={styles.container}>
@@ -60,6 +64,7 @@ const Post = () => {
             <h1>Ticket {ticketNumber} of 500</h1>
           </div>
           </div>
+          <button type="button" onClick={Print} > Print</button>
       </main>
     
     </div>
