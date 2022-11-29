@@ -61,7 +61,7 @@ const Post = () => {
             <img src={QRCode} />
           </div>
           <div>
-            <h1>Ticket {ticketNumber} of 500</h1>
+            <h1>Ticket {ticketNumber} of 550</h1>
           </div>
           </div>
           <button type="button" onClick={Print} > Print</button>
